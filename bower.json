@@ -1,0 +1,23 @@
+{
+  "name": "ng-boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Anis Bouraba <anis.bouraba@appsbroker.com>"
+  ],
+  "description": "ng-boilerplate for learning",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.10",
+    "angular": "~1.2.22",
+    "jquery": "~2.1.1",
+    "angular-route": "~1.2.22"
+  }
+}

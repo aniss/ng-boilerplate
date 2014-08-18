@@ -1,0 +1,9 @@
+- request:
+    url: profile
+    method: GET
+  response:
+    status: 200
+    file: json/profile.json
+    latency: 3000
+    headers:
+        content-type: application/json
