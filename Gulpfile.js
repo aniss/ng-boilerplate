@@ -7,8 +7,12 @@ var gulp = require('gulp'),
 var scripts = [
 	'public/bower_components/jquery/dist/jquery.min.js',
 	'public/bower_components/angular/angular.min.js',
-	'public/bower_components/angular-route/angular-route.min.js',
+	'public/bower_components/angular-animate/angular-animate.min.js',
 	'public/bower_components/angular-ui-router/release/angular-ui-router.min.js',
+	'public/bower_components/lodash/dist/lodash.min.js',
+	'public/bower_components/restangular/dist/restangular.min.js',
+	'public/bower_components/velocity/jquery.velocity.min.js',
+	'public/bower_components/velocity/velocity.ui.min.js',
 	'public/js/**/*.js',
 	'public/js/app.js'
 ];

@@ -15,6 +15,13 @@
     "npm": "^1.4.23"
   },
   "devDependencies": {
+    "chai": "^1.9.1",
+    "karma": "^0.12.22",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5",
+    "karma-mocha": "^0.1.8",
+    "phantomjs": "^1.9.7-15",
     "stubby": "^0.2.6"
   },
   "scripts": {

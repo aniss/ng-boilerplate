@@ -3,30 +3,22 @@
 *
 * Description
 */
-angular.module('App', ['ui.router'])
-	   .config(function($stateProvider, $urlRouterProvider){
+angular.module('App', ['ui.router', 'restangular', 'ngAnimate'])
+	   .config(function($stateProvider, $urlRouterProvider, RestangularProvider){
 	   	$stateProvider
-		   	.state('state1',{
-		   		url: '/',
-		   		template: 'aniss bouraba',
-		   		controller: function() {
-		   		},
-		   		data: {
-		   			title: 'home'
-		   		}
-		   	})
-		   	.state('state2', {
-		   		url: '/login/:id',
-		   		templateUrl: 'js/templates/sidebar.html',
+		   	.state('main',{
+		   		url: '/home',
+		   		templateUrl: 'js/templates/home.html',
 		   		controller: 'HomeController',
-		   		data: {
-		   			title: 'aniss bouraba'
+		   	})
+		   	.state('main.about',{
+		   		url: '/about',
+		   		views: {
+		   			'about': {
+		   				templateUrl:'js/templates/about.html'
+		   			}
 		   		}
 		   	});
-	   	$urlRouterProvider.otherwise('/');
-	   })
-	   .run(function($rootScope){
-	   	  $rootScope.$on('$stateChangeSuccess', function(event, toState){
-	   	  	$rootScope.title = toState.data.title;
-	   	  });
+	   	$urlRouterProvider.otherwise('/home');
+        RestangularProvider.setBaseUrl('http://localhost:8882/');
 	   });

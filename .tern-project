@@ -1,0 +1,9 @@
+{
+    "libs": ["browser", "jquery", "ecma5", "chai"],
+    "plugins": {
+        "angular": "./"
+    },
+    "loadEagerly": [
+        "public/bower_components/velocity/velocity.js"
+    ]
+}
